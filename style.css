@@ -1,0 +1,120 @@
+
+body {
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #0a4b8b;
+    color: white;
+}
+header .navbar {
+    justify-content: center;
+}
+
+.row {
+    height: 7em;
+}
+
+#leftBar {
+    left: 0;
+    transition: width 0.5s;
+    width: 10em;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    height: calc(100vh - 70px); /* Altura ajustada restando el header */
+    position: fixed;
+    top: 70px; /* Altura del header */
+}
+
+#leftBar.expand {
+    width: 15em;
+}
+
+#rightBar {
+    right: 0;
+    transition: width 0.5s;
+    width: 10em;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    height: calc(100vh - 70px); /* Altura ajustada restando el header */
+    position: fixed;
+    top: 70px; /* Altura del header */
+}
+
+#rightBar.expand {
+    width: 15em;
+}
+.nav-link {
+    color: aqua !important;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-bottom: 15px;
+}
+.card {
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.limg-icon {
+    display: flex;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    rotate: 180;
+    transform: scaleX(-1);
+}
+
+.rimg-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.leftbt {
+    position: relative;
+    top:10em;
+    left: 0px;
+}
+
+.rightbt {
+    position: relative;
+    top:10em;
+    right: 0px;
+    
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+
+}
+
+.card .front {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(37, 124, 95);
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.card .back {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(77, 255, 196);
+    transform: rotateY(180deg);
+    
+}
+
+.card.active {
+    transform: rotateY(180deg);
+}
+
+
+
