@@ -22,9 +22,9 @@ header .navbar {
     padding: 20px;
     background-color: #343a40;
     color: white;
-    height: calc(100vh - 70px); /* Altura ajustada restando el header */
+    height: calc(100vh - 70px); 
     position: fixed;
-    top: 70px; /* Altura del header */
+    top: 70px; 
 }
 
 #leftBar.expand {
@@ -38,9 +38,9 @@ header .navbar {
     padding: 20px;
     background-color: #343a40;
     color: white;
-    height: calc(100vh - 70px); /* Altura ajustada restando el header */
+    height: calc(100vh - 70px); 
     position: fixed;
-    top: 70px; /* Altura del header */
+    top: 70px; 
 }
 
 #rightBar.expand {
