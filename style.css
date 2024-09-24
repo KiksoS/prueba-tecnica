@@ -118,9 +118,11 @@ header .navbar {
 
 
 .wrapper {
-    height: calc(100vh - 70px);;
-    padding-left: 3em;
-    padding-right: 3em;
+    position: relative;
+    height: calc(100vh - 70px);
+    width: calc(100vw - 20em);
+    left: 9.5em;
+    transition: all 0.5s ease;
 }
 
 
