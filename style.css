@@ -1,6 +1,8 @@
 
 body {
     background-color: #f8f9fa;
+    height: 100vh;
+
 }
 
 header {
@@ -11,14 +13,11 @@ header .navbar {
     justify-content: center;
 }
 
-.row {
-    height: 7em;
-}
 
 #leftBar {
     left: 0;
     transition: width 0.5s;
-    width: 10em;
+    width: 1em;
     padding: 20px;
     background-color: #343a40;
     color: white;
@@ -28,26 +27,31 @@ header .navbar {
 }
 
 #leftBar.expand {
-    width: 15em;
+    width: 10em;
 }
 
 #rightBar {
     right: 0;
     transition: width 0.5s;
-    width: 10em;
+    width: 1em;
     padding: 20px;
     background-color: #343a40;
     color: white;
     height: calc(100vh - 70px); 
     position: fixed;
-    top: 70px; 
+    top: 70px;
+}
+
+.menu {
+    visibility: hidden;
 }
 
 #rightBar.expand {
-    width: 15em;
+    width: 10em;
 }
 .nav-link {
     color: aqua !important;
+    overflow: hidden;
 }
 
 .toggle-btn {
@@ -56,39 +60,31 @@ header .navbar {
     color: white;
     margin-bottom: 15px;
 }
-.card {
-    margin-bottom: 20px;
-    width: auto;
-}
 
 .limg-icon {
-    display: flex;
-    top: 20px;
+    position:absolute;
     width: 30px;
     height: 30px;
-    rotate: 180;
     transform: scaleX(-1);
+    right: 0px;
 }
 
 .rimg-icon {
+    position: absolute;
     width: 30px;
     height: 30px;
+    left: 5px;
 }
 
-.leftbt {
-    position: relative;
-    top:10em;
-    left: 0px;
-}
 
-.rightbt {
-    position: relative;
-    top:10em;
-    right: 0px;
-    
+
+.row {
+    height: 200px;
 }
 
 .card {
+    margin-bottom: 20px;
+    width: auto;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
 
@@ -101,6 +97,7 @@ header .navbar {
     background-color: rgb(37, 124, 95);
     backface-visibility: hidden;
     z-index: 1;
+    width: 100%;
 }
 
 .card .back {
@@ -109,12 +106,22 @@ header .navbar {
     text-align: center;
     background-color: rgb(77, 255, 196);
     transform: rotateY(180deg);
-    
+    width: 100%; 
 }
 
 .card.active {
     transform: rotateY(180deg);
+    
 }
+
+
+.wrapper {
+    height: calc(100vh - 70px);;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+
 
 
 
