@@ -15,9 +15,9 @@ leftbt.addEventListener("click",function () {
         leftbar.style.backgroundColor = '#343a40';
         ullist[0].style.visibility = 'visible';
         leftbar.classList.remove('close');
-        wrapper.style.left = "21em";
+        wrapper.style.left = "23em";
     }else {
-        wrapper.style.left = "19em";
+        wrapper.style.left = "21em";
         ullist[0].style.visibility = 'hidden';
         leftbar.classList.toggle("close")
 
@@ -33,9 +33,9 @@ rightbt.addEventListener("click",function () {
         ullist[1].style.visibility = 'visible';
         rightbar.classList.remove('close')
         
-        wrapper.style.left = "16.5em";
+        wrapper.style.left = "18.5em";
     }else {
-        wrapper.style.left = "19em";
+        wrapper.style.left = "21em";
         ullist[1].style.visibility = 'hidden';
         rightbar.classList.toggle("close")
     }
